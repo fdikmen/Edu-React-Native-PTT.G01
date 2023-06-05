@@ -23,5 +23,6 @@ npm run ios / npm run android
 CTRL + C
 ```
 09. Props
-10. Flex
+10. Flex - flexDirection
 11. State
+12. Counter

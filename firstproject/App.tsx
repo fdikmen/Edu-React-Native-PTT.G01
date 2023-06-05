@@ -3,6 +3,7 @@ import { StyleSheet, Text, View } from 'react-native';
 import React from 'react';
 import SectionComp from './src/components/SectionComp'
 import FlexComp from './src/components/FlexComp';
+import Counter from './src/components/Counter';
 
 
 const App = (props: Props) => {
@@ -17,11 +18,11 @@ const App = (props: Props) => {
      <SectionComp name="Tommy24"/>
      <SectionComp name="Tommy25" age="42" isActive={false}/> */}
 
-      <View style={styles.cardContainer}>
+      {/* <View style={styles.cardContainer}>
         <Text>Card 1</Text>
-      </View>
-
-      <FlexComp />
+      </View> */}
+      <Counter />
+      {/* <FlexComp /> */}
 
     </View>
   )
