@@ -1,14 +1,17 @@
 import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
 
-type Props = {}
 
-const SectionComp = (props: Props) => {
+
+const SectionComp = (props) => {
   return (
     
     <View style={AppStyles.container}>
       <Text style={{color:'blue'}}>App {4+4}</Text>
       <Text style={AppStyles.text}>App {4+4}</Text>
+      <Text style={{color:'blue'}}>
+        {props.name} Age: {props.age}
+        Is Active = {JSON.stringify(props.isActive)}</Text>
     </View>
   )
 }
