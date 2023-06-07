@@ -1,4 +1,4 @@
-import { ActivityIndicator, StyleSheet, Text, View } from 'react-native'
+import { ActivityIndicator, FlatList, StyleSheet, Text, TextInput, View } from 'react-native'
 import React, { useEffect, useState } from 'react'
 import UserItem from './UserItem'
 import API from '../config/API'
@@ -11,12 +11,15 @@ type User = {
   createdAt: string,
   avatar: string,
   isActive: boolean,
-  birth:string
+  birth: string
 }
 
 const User = (props: Props) => {
   const [users, setUsers] = useState<User[]>([])
-  const [loading,setLoading] = useState(false)
+  const [loading, setLoading] = useState(false)
+  const [search, setSearch] = useState<any>(null)
+
+
   useEffect(() => {
     setLoading(true)
     API.get('/users')
@@ -24,18 +27,28 @@ const User = (props: Props) => {
       .catch(error => { console.log(error) })
       .finally(() => { setLoading(false) })
   }, [users])
-  
+
+  const emptyComp = () => loading
+    ? <ActivityIndicator size='large' color='red' /> :
+    <Text>Empty Data!</Text>
+
+  const headerComp = () => <TextInput
+    // value={search}
+    onChangeText={(text: string) => setSearch(text)}
+    placeholder='Search ...' style={{ borderWidth: 1, padding: 10, fontSize: 12 }} />
+
   return (
     <View>
-      <Text>User</Text>
-      {
-        loading ? <ActivityIndicator size='large' 
-        color='red'/> : 
-        users.map((user: any) => {
-          return <UserItem key={user.id} user={user}/>
-        }
-      )
-      }
+      <Text>User {search}</Text>
+      <FlatList
+        data=
+        {users.filter((user) => user.name?.toLowerCase().includes(search?.toLowerCase()))}
+        renderItem={({ item }) => <UserItem user={item} />}
+        keyExtractor={(item, index) => index.toString()}
+        ListEmptyComponent={emptyComp}
+        ListFooterComponent={() => <Text>Footer</Text>}
+        ListHeaderComponent={headerComp}
+      />
     </View>
   )
 }
