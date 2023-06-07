@@ -89,8 +89,20 @@ npm i axios
 07. ActivityIndicator
 08. Custom API => POSTMAN
 09. FlatList (data | renderItem | keyExtractor | listEmptyComponent | ListHeaderComponent )
-09. PhoneBook (Props,PropsTypes, UseState, UseEffect, Axios, SafeAreaView, View, TextInput, FlatList ActivityIndicator, Text, StyleSheet, Image)
+TSX => type User useState[] renderItem keyExtractor
+09. PhoneBook (Props,PropsTypes, UseState, UseEffect, Axios, SafeAreaView, View, TextInput, FlatList, ActivityIndicator, Text, StyleSheet, Image, Axios)
 ```
 npx react-native init phonebook
 ```
+- User.ts UserItem.ts (tsrnfs with snippet)
+- SafeAreView
+- useState, useEffect, users[], axios.get-> https://647f231bc246f166da9026e4.mockapi.io/users
+- 
 09. ErrorBoundary (getDerivedStateFromError | componentDidCatch)
+
+10. Children
+11. Context
+12. Navigation
+Drawer | Tab | Stack | Nesting
+
+

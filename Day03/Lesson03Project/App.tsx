@@ -1,4 +1,4 @@
-import { ActivityIndicator, Button, FlatList, Platform, SafeAreaView, StyleSheet, Text, TextInput, TouchableOpacity, View } from 'react-native'
+import { Alert,ActivityIndicator, Button, FlatList, Platform, SafeAreaView, StyleSheet, Text, TextInput, TouchableOpacity, View } from 'react-native'
 import React, { useEffect, useState } from 'react'
 import SpinnerComp from './src/components/SpinnerComp'
 import axios from 'axios'
@@ -7,9 +7,14 @@ import CRUDOprt from './src/components/CRUDOprt'
 type Props = {
 }
 
+type User = {
+  id: number,
+  name: string
+}
+
 const App = (props: Props) => {
 
-  const [users, setUsers] = useState([])
+  const [users, setUsers] = useState<User[]>([])
   useEffect(() => {
     axios.get('https://647f231bc246f166da9026e4.mockapi.io/users')
       .then(response => { setUsers(response.data) })
@@ -27,13 +32,14 @@ const App = (props: Props) => {
         // data={[]}
         data={users}
         renderItem={({ item }) => <Text style={styles.rowstyle}>{item.id}.{item.name}</Text>}
-        keyExtractor={(item, index) => index.toString()}
+        keyExtractor={(item:User, index:number) => index.toString()}
         ItemSeparatorComponent={() => <View style={{ borderWidth: 1, borderColor: 'red' }}></View>}
         ListEmptyComponent={() => <Text>List is empty!</Text>}
-        ListFooterComponent={() => <View style={{ borderTopWidth: 2, borderColor: 'black' }}>
+        ListFooterComponent={() => <View style={{ borderTopWidth: 2, borderColor: 'blue' }}>
           <Text>List Footer</Text></View>}
-        ListHeaderComponent={() => <View style={{ borderBottomWidth: 2, borderColor: 'black' }}
+        ListHeaderComponent={() => <View style={{ borderBottomWidth: 2, borderColor: 'green' }}
         ><Text>List Header</Text></View>}
+        onEndReached={() => Alert.alert('End Reached')}
       />
     </SafeAreaView>
   )

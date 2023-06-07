@@ -38,3 +38,15 @@ if(condition){
 condition ? doSomething : doSomethingElse
 
 codition && doSomething
+
+//Array Map
+
+let newUsers = [
+    {name:'John',age:25},
+    {name:'Mary',age:30},
+    {name:'Mike',age:28}
+]
+
+newUsers.map((item,index)=>{
+    return <div key={index}>{item.name}</div>
+})

@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-               BuildableName = "phonebook.app"
-               BlueprintName = "phonebook"
-               ReferencedContainer = "container:phonebook.xcodeproj">
+               BuildableName = "PhoneBook.app"
+               BlueprintName = "PhoneBook"
+               ReferencedContainer = "container:PhoneBook.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "00E356ED1AD99517003FC87E"
-               BuildableName = "phonebookTests.xctest"
-               BlueprintName = "phonebookTests"
-               ReferencedContainer = "container:phonebook.xcodeproj">
+               BuildableName = "PhoneBookTests.xctest"
+               BlueprintName = "PhoneBookTests"
+               ReferencedContainer = "container:PhoneBook.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -55,9 +55,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "phonebook.app"
-            BlueprintName = "phonebook"
-            ReferencedContainer = "container:phonebook.xcodeproj">
+            BuildableName = "PhoneBook.app"
+            BlueprintName = "PhoneBook"
+            ReferencedContainer = "container:PhoneBook.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -72,9 +72,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "phonebook.app"
-            BlueprintName = "phonebook"
-            ReferencedContainer = "container:phonebook.xcodeproj">
+            BuildableName = "PhoneBook.app"
+            BlueprintName = "PhoneBook"
+            ReferencedContainer = "container:PhoneBook.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
