@@ -46,7 +46,7 @@ npx create-react-native-app [Project-Name]
 npx react-native init [Project-Name]
 ```
 03. Button (title | onPress | color | disabled)
-04. Event Handler
+04. Event Handler/Bind
 05. Alert.alert('XXXX') | Alert.prompt('title','msg',func) -> IOS
 06. Image (source->{require}  | @2x @3x @4x | source->{{uri}})
 - resizeMode (contain, cover, center, repeat, stretch )
@@ -54,7 +54,7 @@ npx react-native init [Project-Name]
 07. Touchables => TouchableOpacity & TouchableHighlight & TouchableWithoutFeedback
 08. TextInput (onChangeText, value, placeholder, style, 
 secureTextEntry={true}, editable={false}, keyboardType='number-pad', autoCapitalize='characters')
-IOS Keyboard Show => SHIFT+CMD+K
+IOS Keyboard Show => SHIFT+CMD+K | SHIFT+CTRL+K
 09. ScrollView (horizontal={true},pagingEnabled={true} )  -> ListView
 10. Dimensions
 Dimensions.get('window').width | Dimensions.get('window').height;
@@ -68,20 +68,29 @@ Style Sampel=> https://reactnative.dev/docs/platform-specific-code
 14. LifeCycle -> useEffect
 15. Hooks -> useState & useEffect
 16. Fetch
--  https://jsonplaceholder.typicode.com
+- https://jsonplaceholder.typicode.com
 - https://mockapi.io
 - https://www.mockaroo.com
 17. Axios
 ```
 npm i axios
 ```
-13. FlatList (data | renderItem | keyExtractor | listEmptyComponent | ListHeaderComponent )
-14. PhoneBook App
 ---
 > BUG FIXED: Address already in use :::8081
  (SOLUTION)[https://medium.com/@fdikmen/react-nativede-port-çakışması-sorunu-ve-çözümü-10d2306acaec]
- ---
-
- 15. SpreadOperator
-
- | ...Platform.select({ -> in style
+---
+## 07062023 (Day03)
+01. Summary
+02. Axios
+03. Deprecated => npx react-native init LessonProject --platform ios | npx react-native init LessonProject --skip android
+04. Dimensions.get('screen').width vs Dimensions.get('window').width
+05. Spread Operator (...)
+06. Platform.Select
+07. ActivityIndicator
+08. Custom API => POSTMAN
+09. FlatList (data | renderItem | keyExtractor | listEmptyComponent | ListHeaderComponent )
+09. PhoneBook (Props,PropsTypes, UseState, UseEffect, Axios, SafeAreaView, View, TextInput, FlatList ActivityIndicator, Text, StyleSheet, Image)
+```
+npx react-native init phonebook
+```
+09. ErrorBoundary (getDerivedStateFromError | componentDidCatch)
