@@ -98,13 +98,7 @@ npx react-native init phonebook
 - useState, useEffect, users[], axios.get-> https://647f231bc246f166da9026e4.mockapi.io/users
 - 
 10. Children
-11. Context
-09. ErrorBoundary (getDerivedStateFromError | componentDidCatch)
 
-
-11. Context
-12. Navigation
-Drawer | Tab | Stack | Nesting
 
 
 ---
