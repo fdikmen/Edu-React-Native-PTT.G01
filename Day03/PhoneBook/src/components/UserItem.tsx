@@ -25,7 +25,7 @@ export default UserItem
 
 const mystyles = StyleSheet.create({
   container: {
-    flex: 1,
+    flex:1,
     backgroundColor: '#f5f5f5',
     flexDirection: 'row',
     padding:10
