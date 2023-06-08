@@ -62,8 +62,7 @@ Dimensions.addEventListener('change', onChange);
 Dimensions.removeEventListener('change', onChange);
 11. SafeAreaView
 12. Platform Based Components .ios/.android | Platform.OS - (ios - android) | Platform.Version
-
-Style Sampel=> https://reactnative.dev/docs/platform-specific-code
+Style Sample=> https://reactnative.dev/docs/platform-specific-code
 13. Class Component + Function Comp
 14. LifeCycle -> useEffect
 15. Hooks -> useState & useEffect
@@ -106,5 +105,15 @@ npx react-native init phonebook
 11. Context
 12. Navigation
 Drawer | Tab | Stack | Nesting
+
+
+---
+## 08062023 (Day04)
+01. Summary
+02. ErrorBoundary (getDerivedStateFromError | componentDidCatch)
+03. ContextAPI
+04. Navigation
+Drawer | Tab | Stack | Nesting
+05. 
 
 

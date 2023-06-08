@@ -36,7 +36,7 @@ const User = (props: Props) => {
       <Text >Empty Data!</Text>
     </View>
 
-  const headerComp = () => <TextInput
+  const headerComp = <TextInput
     value={search}
     onChangeText={(text: string) => setSearch(text)}
     placeholder='Search ...' style={{ borderWidth: 1, padding: 10, fontSize: 12 }} />
@@ -60,10 +60,6 @@ const User = (props: Props) => {
 export default User
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#f6f6f6'
-  },
   emptyContainer: {
     padding:10,
     alignItems: 'center',
