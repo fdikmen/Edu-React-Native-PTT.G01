@@ -108,6 +108,44 @@ npx react-native init phonebook
 03. ContextAPI
 04. Navigation
 Drawer | Tab | Stack | Nesting
-05. 
+05. Comment => CMD/CTRL + K + C  => UnComment => CMD/CTRL + K + U
 
+06. jamfnow => (Local IOS  Deploy)
+07. Debuging => 1.Native IDE (Xcode & AStudio) 2. Console Msg 3. localhost:8081 4. Terminal(Metro)
 
+---
+## 09062023 (Day05)
+01. Summary
+02. SafeAreaView X [npm install react-native-screens react-native-safe-area-context]
+.ts vs .tsx =>JSX
+02. Final Project
+npx react-native init finalProject
+Clear App.tsx (with tsrnfs)
+- Folder Structure [https://medium.com/@fdikmen/react-native-%C3%B6rnek-klas%C3%B6r-yap%C4%B1s%C4%B1-fbc1e131f813]
+- npm install @react-navigation/native
+- npm install react-native-screens react-native-safe-area-context
+- npx pod-install ios => cd ios && pod install
+- Import (
+import { NavigationContainer } from '@react-navigation/native';)
+
+- npm install @react-navigation/native-stack
+- npm install @react-navigation/bottom-tabs
+- npm install @react-navigation/drawer
+    - npm install react-native-gesture-handler react-native-reanimated
+    - import 'react-native-gesture-handler';
+    - npx pod-install ios => cd ios && pod install
+- npm i axios
+- npm install redux
+    - npm install react-redux
+    - yarn add @reduxjs/toolkit
+    - https://medium.com/@fdikmen/redux-toolkit-ile-modern-redux-kullan%C4%B1m%C4%B1-5b59f8055da6
+
+03. Nested Navigation
+04. Cutom Icon on Tab Navigation
+05. Coding Login Page
+05. Redux
+06. File Upload
+Permissons
+- android => .../android/app/src/debug/AndroidManifest.xml
+- ios => .../ios/finalProject/Info.plist
+07. [Deploy Steps](https://github.com/fdikmen/Edu-React-Native-PTT.G01/blob/main/deploy.md)
