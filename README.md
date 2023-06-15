@@ -149,3 +149,4 @@ Permissons
 - android => .../android/app/src/debug/AndroidManifest.xml
 - ios => .../ios/finalProject/Info.plist
 07. [Deploy Steps](https://github.com/fdikmen/Edu-React-Native-PTT.G01/blob/main/deploy.md)
+08. [Final Project Steps](https://github.com/fdikmen/Edu-React-Native-PTT.G01/blob/main/finalProject.md)
